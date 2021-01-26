@@ -1,0 +1,5 @@
+C:\ProgramData\Autodesk\Revit\Macros\2021\Revit\AppHookup\reactbim\AddIn\reactbim.dll
+C:\ProgramData\Autodesk\Revit\Macros\2021\Revit\AppHookup\reactbim\AddIn\reactbim.pdb
+C:\ProgramData\Autodesk\Revit\Macros\2021\Revit\AppHookup\reactbim\Source\reactbim\obj\Debug\reactbim.csprojResolveAssemblyReference.cache
+C:\ProgramData\Autodesk\Revit\Macros\2021\Revit\AppHookup\reactbim\Source\reactbim\obj\Debug\reactbim.dll
+C:\ProgramData\Autodesk\Revit\Macros\2021\Revit\AppHookup\reactbim\Source\reactbim\obj\Debug\reactbim.pdb
