@@ -67,7 +67,7 @@ namespace reactbim
 			//<<----------------------------------------------------INPUTS---------------------------------------------------------->>
 			
 			//level
-			Level level = GetLevel("Nivel 1"); // 1.
+			Level level = GetLevel("Plan 06"); // 1.
 			
 			// coordenadas XYZ(x,y,z)
 			XYZ stPoint = new XYZ(0,0,0); // 2.
@@ -77,14 +77,7 @@ namespace reactbim
 			// type of House Shapes :  square, rectangle, triangle
 			string n = "rectangle"; // 4.
 			
-			// Doors in the RIGHT
-			bool wind_RigthWall = true; // 5.
-
-			// Ventanas in the LEFT
-			bool door_LeftWall = true; // 6.
-			
 			double _heigth_ = 2880/304.8; // 7.
-			double h_window = 800/304.8; // 8.
 			
 			// coord XYZ(x,y,z)
 			XYZ stPoint_nuevo = new XYZ(0,0,0);
@@ -93,7 +86,7 @@ namespace reactbim
 			
 			
 			// Create House in differents Shapes :  Square, Rectangle, Triangle
-			List<List<Wall>> walls = Create_House_Shapes(n, _heigth_, stPoint_nuevo, "Nivel 1");
+			List<List<Wall>> walls = Create_House_Shapes(n, _heigth_, stPoint_nuevo, "Plan 06");
 			
 			List<Wall> walls_Rigth = walls.First();
 			List<Wall> walls_Left = walls.Last();
@@ -101,20 +94,7 @@ namespace reactbim
 //			TaskDialog.Show("REACT-BIM", aa_Rigth.Count().ToString() + " Walls in the Rigth" + Environment.NewLine + 
 //			                									aa_Left.Count().ToString() + " Walls in the Left");
 			
-			if (door_LeftWall) 
-			{
-				foreach (Wall wa in walls_Left)
-				{
-					CreateDoor(wa);
-				}
-			}
-			if (wind_RigthWall) 
-			{
-				foreach (Wall wa in walls_Rigth) 
-				{
-					CreateWindow(wa, h_window);
-				}
-			}
+
 
 		}
 		
